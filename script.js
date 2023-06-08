@@ -43,7 +43,7 @@ button.addEventListener("click",calculateGrowth);
             growth = toDecimal(final,2) ; 
         }
         // console.table(data);
-        message.innerText = `Vous aurez un montant de ${growth} apres ${period} periodes`;
+        message.innerText = `Vous aurez un montant de ${growth}CAD apres ${period} ans`;
         drawGraph();
      
 
@@ -54,8 +54,6 @@ button.addEventListener("click",calculateGrowth);
 
     }
  
- console.log("deloo");
-
  function drawGraph(){
     line.destroy()
     line = new Chart (context,{
@@ -73,7 +71,6 @@ button.addEventListener("click",calculateGrowth);
         }
     });
  }
- console.log("deloo");
  function toDecimal(value,decimals){
     return +value.toFixed(decimals);
  }
