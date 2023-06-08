@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Compound Interest Calculator</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Calculatrice des interets simples</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="style.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script> 
     <!-- enlever umd et voir -->
 
 </head>
@@ -17,32 +17,33 @@
     <section class="container">
         <div class="calculator">
             <div class="heading">
-                <h3> Compound Interst Calculator</h3>
-                <small> Your money growth over time using compound interest</small>
+                <h3>Calculatrice des interets simples</h3>
+                <small> Votre argent croit au dela du temps avec les interets composes</small>
 
             </div>
             <form class="compound-form">
                 <div class="input-group">
-                    <label for="initialamount">initial amount</label>
+                    <label for="initialamount">Montant initial</label>
                     <input type="number" id="initialamount">
 
                 </div>
 
                 <div class="input-group">
-                    <label for="years">Investments Years</label>
+                    <label for="years">duree investissement</label>
                     <input type="number" id="years">
 
                 </div>
 
 
                 <div class="input-group">
-                    <label for="rates">Estimated Rates(%)</label>
+                    <label for="rates">Taux estimes(%)</label>
                     <input type="number" id="rates">
 
                 </div>
 
                 <div class="input-group">
-                    <label for="rates">Compound Interval</label>
+                    <!-- <label for="rates">Compound Interval</label> -->
+                    <label for="rates">Intervalle de placements</label>
                     <select  id="compound">
                         <option value="1">Annualy</option>
                         <option value="4">Quaterly</option>
@@ -61,11 +62,15 @@
 
         </div>
         <div class="results">
+            <h3 id="message"></h3>
             <canvas id="data-set"></canvas>
           
         </div>
 
     </section>
-  <script src="script.js"></script>  
+    
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script> -->
+  <script src="script.js"></script>
 </body>
 </html>
